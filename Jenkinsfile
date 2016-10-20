@@ -13,5 +13,6 @@ node {
    // Mark the code build 'stage'....
    stage 'Build'
    // Run the maven build
-   sh "${mvnHome}/bin/mvn clean install sonar:sonar -Dsonar.host.url=http://192.168.224.139:9000 site"
+   //sh "${mvnHome}/bin/mvn clean install sonar:sonar -Dsonar.host.url=http://192.168.224.139:9000 site"
+   sh "${mvnHome}/bin/mvn clean install"
 }
